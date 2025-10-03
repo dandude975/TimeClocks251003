@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CsharpLab251003_2
+{
+    public class TokyoTime : LocalTime
+    {
+        public TokyoTime(DateTime lt) : base(lt) { }
+        protected override string City => "Tokyo";
+        protected override int OffsetHours => +9;
+    }
+}
